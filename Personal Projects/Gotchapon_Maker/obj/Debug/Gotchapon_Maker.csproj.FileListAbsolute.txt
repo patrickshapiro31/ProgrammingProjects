@@ -1,0 +1,24 @@
+H:\Personal Porjects\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.csprojAssemblyReference.cache
+H:\Personal Porjects\Gotchapon_Maker\bin\Debug\Gotchapon_Maker.exe.config
+H:\Personal Porjects\Gotchapon_Maker\bin\Debug\Gotchapon_Maker.exe
+H:\Personal Porjects\Gotchapon_Maker\bin\Debug\Gotchapon_Maker.pdb
+H:\Personal Porjects\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.BattleForm.resources
+H:\Personal Porjects\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.form1.resources
+H:\Personal Porjects\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.MainForm.resources
+H:\Personal Porjects\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.Properties.Resources.resources
+H:\Personal Porjects\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.csproj.GenerateResource.cache
+H:\Personal Porjects\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.csproj.CoreCompileInputs.cache
+H:\Personal Porjects\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.exe
+H:\Personal Porjects\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.pdb
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\bin\Debug\Gotchapon_Maker.exe.config
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\bin\Debug\Gotchapon_Maker.exe
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\bin\Debug\Gotchapon_Maker.pdb
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.csprojAssemblyReference.cache
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.BattleForm.resources
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.form1.resources
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.MainForm.resources
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.Properties.Resources.resources
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.csproj.GenerateResource.cache
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.csproj.CoreCompileInputs.cache
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.exe
+C:\Users\Patrick is a pimp\source\repos\Gotchapon_Maker\obj\Debug\Gotchapon_Maker.pdb

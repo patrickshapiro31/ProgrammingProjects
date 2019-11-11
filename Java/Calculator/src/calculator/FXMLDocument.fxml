@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="404.0" prefWidth="312.0000999999975" style="-fx-background-color:black;&#10;-fx-background-radius: 25;&#10;-fx-padding: 10;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="calculator.FXMLDocumentController">
+  <children>
+    <HBox alignment="TOP_LEFT" layoutX="14.0" layoutY="121.0" prefHeight="57.0" prefWidth="276.0" spacing="18.0" style="-fx-background-color:black;">
+      <children>
+        <Button mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="1">
+          <font>
+            <Font size="24.0" fx:id="x1" />
+          </font>
+        </Button>
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="2" />
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="3" />
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" style="-fx-background-color:orange;" text="X" textFill="WHITE" />
+      </children>
+    </HBox>
+    <HBox layoutX="14.0" layoutY="191.0" prefHeight="55.999900000002526" prefWidth="278.0" spacing="18.0" style="-fx-background-color:black;">
+      <children>
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="4" />
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="5" />
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="6" />
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" style="-fx-background-color:orange;" text="/" textFill="WHITE" />
+      </children>
+    </HBox>
+    <HBox layoutX="14.0" layoutY="260.0" prefHeight="57.0" prefWidth="278.0" spacing="18.0" style="-fx-background-color:black;">
+      <children>
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="7" />
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="8" />
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="9" />
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" style="-fx-background-color:orange;" text="-" textFill="WHITE" />
+      </children>
+    </HBox>
+    <HBox layoutX="14.0" layoutY="328.0" prefHeight="56.000099999997474" prefWidth="278.0" spacing="18.0" style="-fx-background-color:black;">
+      <children>
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" style="-fx-background-radius: 0 0 0 25;" text="0" />
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" text="." />
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" style="-fx-background-color:green;" text="=" textFill="WHITE" />
+        <Button font="$x1" minHeight="56.0" minWidth="56.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="56.0" style="-fx-background-color:orange;&#10;-fx-background-radius: 0 0 25 0;" text="+" textFill="WHITE" />
+      </children>
+    </HBox>
+    <VBox alignment="TOP_RIGHT" layoutX="14.0" layoutY="14.0" prefHeight="85.0" prefWidth="276.0" spacing="2.0">
+      <children>
+        <Button minHeight="16.0" minWidth="16.0" mnemonicParsing="false" onAction="#exitCalculator" prefHeight="16.0" prefWidth="16.0" style="-fx-background-color:red;&#10;-fx-background-radius: 25;" text="" />
+        <TextField alignment="CENTER_RIGHT" maxHeight="89.0" minHeight="85.0" prefHeight="85.0" prefWidth="276.0" style="-fx-background-color:black;&#10;-fx-font-size: 35pt;&#10;-fx-text-inner-color: white;" text="3.142" />
+      </children>
+    </VBox>
+  </children>
+  <padding>
+    <Insets />
+  </padding>
+</AnchorPane>

@@ -1,0 +1,11 @@
+C:\Users\Patrick is a pimp\source\repos\itse1430\Personal Projects\LootGenerator\LootGenerator\bin\Debug\LootGenerator.exe.config
+C:\Users\Patrick is a pimp\source\repos\itse1430\Personal Projects\LootGenerator\LootGenerator\bin\Debug\LootGenerator.exe
+C:\Users\Patrick is a pimp\source\repos\itse1430\Personal Projects\LootGenerator\LootGenerator\bin\Debug\LootGenerator.pdb
+C:\Users\Patrick is a pimp\source\repos\itse1430\Personal Projects\LootGenerator\LootGenerator\obj\Debug\LootGenerator.csprojAssemblyReference.cache
+C:\Users\Patrick is a pimp\source\repos\itse1430\Personal Projects\LootGenerator\LootGenerator\obj\Debug\LootGenerator.MainForm.resources
+C:\Users\Patrick is a pimp\source\repos\itse1430\Personal Projects\LootGenerator\LootGenerator\obj\Debug\LootGenerator.Properties.Resources.resources
+C:\Users\Patrick is a pimp\source\repos\itse1430\Personal Projects\LootGenerator\LootGenerator\obj\Debug\LootGenerator.ResultForm.resources
+C:\Users\Patrick is a pimp\source\repos\itse1430\Personal Projects\LootGenerator\LootGenerator\obj\Debug\LootGenerator.csproj.GenerateResource.cache
+C:\Users\Patrick is a pimp\source\repos\itse1430\Personal Projects\LootGenerator\LootGenerator\obj\Debug\LootGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Patrick is a pimp\source\repos\itse1430\Personal Projects\LootGenerator\LootGenerator\obj\Debug\LootGenerator.exe
+C:\Users\Patrick is a pimp\source\repos\itse1430\Personal Projects\LootGenerator\LootGenerator\obj\Debug\LootGenerator.pdb

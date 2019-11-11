@@ -1,0 +1,2235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import dndcharactersheet.NumberField?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="809.0" opacity="1.0" prefHeight="925.6001755859324" prefWidth="1216.9998779296875" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dndcharactersheet.FXMLDocumentController">
+  <children>
+    <HBox alignment="CENTER" layoutX="14.0" layoutY="2.0" prefHeight="25.0" prefWidth="814.0" spacing="15.0" style="-fx-background-color:lightgrey;">
+      <children>
+        <Label text="Name" />
+        <TextField prefWidth="186.0" text="" />
+        <Label text="Player" />
+        <TextField prefWidth="118.0" text="" />
+        <Label prefWidth="66.0" text="Class/Level" />
+        <TextField prefWidth="240.0" text="" />
+      </children>
+    </HBox>
+    <HBox alignment="CENTER" layoutX="14.0" layoutY="27.0" prefHeight="25.0" prefWidth="814.0" spacing="10.0" style="-fx-background-color:lightgrey;">
+      <children>
+        <Label text="Gender" />
+        <TextField prefWidth="57.0" text="" />
+        <Label prefWidth="32.0" text="Race" />
+        <TextField prefWidth="106.0" text="" />
+        <Label prefWidth="65.9998779296875" text="Alignment" />
+        <TextField prefWidth="81.0" text="" />
+        <Label text="Hit Dice" />
+        <TextField prefWidth="118.0" text="" />
+        <Label prefWidth="28.0" text="Size" />
+        <ComboBox id="label" fx:id="sizeMenu" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minWidth="81.0" onAction="#SizePicked" prefHeight="21.0" prefWidth="106.0" visible="true">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+      </children>
+    </HBox>
+    <HBox alignment="CENTER" layoutX="14.0" layoutY="52.0" prefHeight="25.0" prefWidth="814.0" spacing="10.0" style="-fx-background-color:lightgrey;">
+      <children>
+        <Label text="Age" />
+        <TextField prefWidth="57.0" text="" />
+        <Label text="Diety" />
+        <TextField prefWidth="150.0" text="" />
+        <Separator prefHeight="5.0" prefWidth="131.0" />
+        <Label text="Experience" />
+        <TextField prefWidth="66.0" text="" />
+        <Label text="/" />
+        <TextField prefWidth="66.0" text="" />
+        <Label text="Level" />
+        <TextField alignment="CENTER" prefWidth="42.0" text="" />
+      </children>
+    </HBox>
+    <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="91.0" prefHeight="311.5" prefWidth="66.0" spacing="5.0" style="">
+      <children>
+        <AnchorPane minHeight="49.0" prefHeight="49.0" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" layoutX="13.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="39.0" text="STR" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="20.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="10.0" layoutY="27.0" text="Strength" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="49.0" prefHeight="49.0" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" font="$x1" layoutX="13.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="39.0" text="DEX" textFill="WHITE" />
+            <Label alignment="TOP_CENTER" layoutX="10.0" layoutY="27.0" text="Strength" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="49.0" prefHeight="49.0" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" contentDisplay="TOP" font="$x1" layoutX="11.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="46.0" text="CON" textFill="WHITE" />
+            <Label alignment="TOP_CENTER" layoutX="10.0" layoutY="27.0" text="Strength" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="49.0" prefHeight="49.0" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" font="$x1" layoutX="13.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="39.0" text="INT" textFill="WHITE" />
+            <Label alignment="TOP_CENTER" layoutX="10.0" layoutY="27.0" text="Strength" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="49.0" prefHeight="49.0" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" font="$x1" layoutX="13.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="39.0" text="WIS" textFill="WHITE" />
+            <Label alignment="TOP_CENTER" layoutX="10.0" layoutY="27.0" text="Strength" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="48.9998779296875" prefHeight="48.9998779296875" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" font="$x1" layoutX="11.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="42.0" text="CHA" textFill="WHITE" />
+            <Label alignment="TOP_CENTER" layoutX="10.0" layoutY="27.0" text="Strength" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </AnchorPane>
+      </children>
+    </VBox>
+    <HBox alignment="TOP_LEFT" layoutX="79.0" layoutY="77.0" prefHeight="21.0" prefWidth="334.0" spacing="20.0" style="-fx-background-color:white;">
+      <children>
+        <Label alignment="TOP_LEFT" prefWidth="76.800048828125" text="    Modifier" />
+        <Label alignment="CENTER_LEFT" prefWidth="39.0" text="Total" />
+        <Label alignment="CENTER_LEFT" prefWidth="46.0" text="   Base" />
+        <Label alignment="CENTER_LEFT" prefWidth="58.0" text="Temporary" />
+      </children>
+    </HBox>
+    <AnchorPane layoutX="80.0" layoutY="90.0" prefHeight="319.0" prefWidth="318.0">
+      <children>
+        <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="9.0" prefHeight="32.0" prefWidth="324.0" spacing="0.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Label fx:id="strModLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="81.0" text="+0" textAlignment="LEFT">
+              <font>
+                <Font size="24.0" fx:id="x2" />
+              </font>
+            </Label>
+            <Label fx:id="strTotalLabel" alignment="CENTER" contentDisplay="LEFT" font="$x2" prefWidth="58.0" text="10" />
+            <Label font="$x2" prefHeight="32.0" prefWidth="22.0" text="=" />
+                  <NumberField fx:id="strBaseField" alignment="CENTER" onKeyReleased="#updateStrength" prefHeight="25.0" prefWidth="42.0" text="10" />
+            <Label alignment="CENTER" font="$x2" minHeight="5.0" prefHeight="31.999900000002526" prefWidth="25.0" text="+" />
+            <NumberField fx:id="strTempField" alignment="CENTER" onContextMenuRequested="#updateStrength" onKeyReleased="#updateStrength" prefHeight="25.0" prefWidth="42.0" text="0" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="0.0" layoutY="62.0" prefHeight="32.0" prefWidth="324.0" spacing="0.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Label fx:id="dexModLabel" alignment="CENTER" contentDisplay="CENTER" font="$x2" prefHeight="32.0" prefWidth="81.0" text="+0" textAlignment="LEFT" />
+            <Label fx:id="dexTotalLabel" alignment="CENTER" contentDisplay="LEFT" font="$x2" prefWidth="58.0" text="10" />
+            <Label font="$x2" prefHeight="32.0" prefWidth="22.0" text="=" />
+                    <NumberField fx:id="dexBaseField" alignment="CENTER" onKeyReleased="#updateDexterity" prefHeight="25.0" prefWidth="42.0" text="10" />
+            <Label alignment="CENTER" font="$x2" minHeight="5.0" prefHeight="31.999900000002526" prefWidth="25.0" text="+" />
+            <NumberField fx:id="dexTempField" alignment="CENTER" onKeyReleased="#updateDexterity" prefHeight="25.0" prefWidth="42.0" text="0" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="0.0" layoutY="116.0" prefHeight="32.0" prefWidth="324.0000999999975" spacing="0.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Label fx:id="conModLabel" alignment="CENTER" contentDisplay="CENTER" font="$x2" prefHeight="32.0" prefWidth="81.0" text="+0" textAlignment="LEFT" />
+            <Label fx:id="conTotalLabel" alignment="CENTER" contentDisplay="LEFT" font="$x2" prefWidth="58.0" text="10" />
+            <Label font="$x2" prefHeight="32.0" prefWidth="22.0" text="=" />
+            <NumberField fx:id="conBaseField" alignment="CENTER" onKeyReleased="#updateConstitution" prefHeight="25.0" prefWidth="42.0" text="10" />
+            <Label alignment="CENTER" font="$x2" minHeight="5.0" prefHeight="31.999900000002526" prefWidth="25.0" text="+" />
+            <NumberField fx:id="conTempField" alignment="CENTER" onKeyReleased="#updateConstitution" prefHeight="25.0" prefWidth="42.0" text="0" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="0.0" layoutY="171.0" prefHeight="32.0" prefWidth="324.0" spacing="0.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Label fx:id="intModLabel" alignment="CENTER" contentDisplay="CENTER" font="$x2" prefHeight="32.0" prefWidth="81.0" text="+0" textAlignment="LEFT" />
+            <Label fx:id="intTotalLabel" alignment="CENTER" contentDisplay="LEFT" font="$x2" prefWidth="58.0" text="10" />
+            <Label font="$x2" prefHeight="32.0" prefWidth="22.0" text="=" />
+            <NumberField fx:id="intBaseField" alignment="CENTER" onKeyReleased="#updateIntelligence" prefHeight="25.0" prefWidth="42.0" text="10" />
+            <Label alignment="CENTER" font="$x2" minHeight="5.0" prefHeight="31.999900000002526" prefWidth="25.0" text="+" />
+            <NumberField fx:id="intTempField" alignment="CENTER" onKeyReleased="#updateIntelligence" prefHeight="25.0" prefWidth="41.9998779296875" text="0" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="0.0" layoutY="225.0" prefHeight="32.0" prefWidth="324.0" spacing="0.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Label fx:id="wisModLabel" alignment="CENTER" contentDisplay="CENTER" font="$x2" prefHeight="32.0" prefWidth="81.0" text="+0" textAlignment="LEFT" />
+            <Label fx:id="wisTotalLabel" alignment="CENTER" contentDisplay="LEFT" font="$x2" prefWidth="58.0" text="10" />
+            <Label font="$x2" prefHeight="32.0" prefWidth="22.0" text="=" />
+            <NumberField fx:id="wisBaseField" alignment="CENTER" onKeyReleased="#updateWisdom" prefHeight="25.0" prefWidth="42.0" text="10" />
+            <Label alignment="CENTER" font="$x2" minHeight="5.0" prefHeight="31.999900000002526" prefWidth="25.0" text="+" />
+            <NumberField fx:id="wisTempField" alignment="CENTER" onKeyReleased="#updateWisdom" prefHeight="25.0" prefWidth="42.0" text="0" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="0.0" layoutY="280.0" prefHeight="32.0" prefWidth="324.0" spacing="0.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Label fx:id="chaModLabel" alignment="CENTER" contentDisplay="CENTER" font="$x2" prefHeight="32.0" prefWidth="81.0" text="+0" textAlignment="LEFT" />
+            <Label fx:id="chaTotalLabel" alignment="CENTER" contentDisplay="LEFT" font="$x2" prefWidth="58.0" text="10" />
+            <Label font="$x2" prefHeight="32.0" prefWidth="22.0" text="=" />
+            <NumberField fx:id="chaBaseField" alignment="CENTER" onKeyReleased="#updateCharisma" prefHeight="25.0" prefWidth="42.0" text="10" />
+            <Label alignment="CENTER" font="$x2" minHeight="5.0" prefHeight="31.999900000002526" prefWidth="25.0" text="+" />
+            <NumberField fx:id="chaTempField" alignment="CENTER" onKeyReleased="#updateCharisma" prefHeight="25.0" prefWidth="42.0" text="0" />
+          </children>
+        </HBox>
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="406.0" layoutY="195.0" minWidth="424.0" prefHeight="383.0" prefWidth="425.0">
+      <children>
+        <AnchorPane layoutX="0.0" layoutY="20.0" minHeight="49.0" prefHeight="49.0" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" font="$x1" layoutX="13.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="39.0" text="AC" textFill="WHITE" />
+            <Label alignment="TOP_CENTER" layoutX="2.0" layoutY="27.0" text="Armor Class" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </AnchorPane>
+        <HBox alignment="CENTER_LEFT" layoutX="2.0" layoutY="69.0" prefHeight="32.0" prefWidth="423.0" spacing="3.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Label fx:id="actotallabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="32.0" text="10">
+              <font>
+                <Font name="System Bold" size="18.0" fx:id="x4" />
+              </font>
+            </Label>
+            <Label prefHeight="25.0" text="= 10 +">
+              <font>
+                <Font size="18.0" fx:id="x3" />
+              </font>
+            </Label>
+            <NumberField fx:id="acArmorField" alignment="BOTTOM_CENTER" onKeyReleased="#updateAC" prefWidth="27.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="acShieldField" alignment="BOTTOM_CENTER" onKeyReleased="#updateAC" prefWidth="27.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+                  <Label fx:id="acstatlabel" alignment="CENTER" prefHeight="17.0" prefWidth="26.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+                  <Label fx:id="acsizelabel" alignment="CENTER" prefHeight="17.0" prefWidth="24.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="acNaturalField" alignment="BOTTOM_CENTER" onKeyReleased="#updateAC" prefWidth="27.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="acDeflectField" alignment="BOTTOM_CENTER" onKeyReleased="#updateAC" prefWidth="27.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="acMiscField" alignment="BOTTOM_CENTER" onKeyReleased="#updateAC" prefWidth="27.0" text="0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <AnchorPane layoutX="2.0" layoutY="103.0" minHeight="49.0" prefHeight="49.0" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" layoutX="0.0" layoutY="9.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="66.0" text="Grapple" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="16.0" fx:id="x8" />
+              </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="11.0" layoutY="27.0" text="Modifier" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </AnchorPane>
+        <HBox alignment="CENTER_LEFT" layoutX="4.0" layoutY="152.0" prefHeight="32.0" prefWidth="423.0" spacing="3.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="grapplebutt" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label fx:id="grapplemodlabel" alignment="CENTER" font="$x4" prefHeight="25.0" prefWidth="32.0" text="0" />
+            <Label font="$x3" prefHeight="25.0" prefWidth="32.0" text="=" />
+            <Label fx:id="bablabelgrapple" alignment="CENTER" contentDisplay="CENTER" prefWidth="39.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <Label fx:id="strlabelgrapple" alignment="CENTER" contentDisplay="CENTER" prefWidth="29.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <Label fx:id="sizelabelgrapple" alignment="CENTER" contentDisplay="CENTER" prefWidth="29.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="grappleMiscField" alignment="BOTTOM_CENTER" onKeyReleased="#updateGrapple" prefWidth="39.0" text="0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <Label layoutX="68.0" layoutY="53.0" prefWidth="357.0" text="         Armor     Shield       Dex         Size     Natural   Deflect      Misc" />
+        <Label layoutX="95.0" layoutY="137.0" prefWidth="275.0" text="       BAB           STR         Size          Misc " />
+        <AnchorPane layoutX="4.0" layoutY="184.0" minHeight="49.0" prefHeight="49.0" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" font="$x1" layoutX="7.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="52.0" text="INIT" textFill="WHITE" />
+            <Label alignment="TOP_CENTER" layoutX="11.0" layoutY="27.0" text="Initiative" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </AnchorPane>
+        <HBox alignment="CENTER_LEFT" layoutX="4.0" layoutY="232.0" prefHeight="32.0" prefWidth="423.0" spacing="5.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="initbutt" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label fx:id="inittotallabel" alignment="CENTER" contentDisplay="LEFT" font="$x4" prefWidth="39.0" text="0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" font="$x2" prefWidth="22.0" text="=" />
+            <Label fx:id="initstatlabel" alignment="CENTER" font="$x3" prefWidth="39.0" text="0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" font="$x2" prefWidth="22.0" text="+" />
+            <NumberField fx:id="initMiscField" alignment="CENTER" onKeyReleased="#updateInitiative" prefWidth="39.0" text="0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" layoutX="106.0" layoutY="211.0" prefHeight="21.0" prefWidth="150.00009999999747" spacing="0.0">
+          <children>
+            <Label alignment="CENTER_LEFT" prefWidth="93.0" text="Dex Mod" />
+            <Label alignment="CENTER_LEFT" contentDisplay="LEFT" prefWidth="81.0" text="Misc" />
+          </children>
+        </HBox>
+        <AnchorPane layoutX="3.0" layoutY="264.0" minHeight="49.0" prefHeight="49.0" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" font="$x1" layoutX="3.0" layoutY="10.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="57.0" text="Saves" textFill="WHITE" />
+          </children>
+        </AnchorPane>
+        <HBox alignment="CENTER_LEFT" layoutX="6.0" layoutY="314.0" minHeight="22.0" prefHeight="22.0" prefWidth="416.0" scaleX="1.0" scaleY="1.0" scaleZ="1.0" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="fortbutt" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="54.0" text="Fortitude">
+              <font>
+                <Font size="12.0" fx:id="x5" />
+              </font>
+            </Label>
+            <Label fx:id="forttotallabel" prefWidth="22.5" text="0">
+              <font>
+                <Font size="16.0" fx:id="x6" />
+              </font>
+            </Label>
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="saveMenuFort" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateFort" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="fortabilitylabel" prefWidth="16.800048828125" text="0">
+              <font>
+                <Font size="14.0" fx:id="x7" />
+              </font>
+            </Label>
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="fortBaseField" alignment="BOTTOM_CENTER" onKeyReleased="#updateFort" prefWidth="29.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="fortMagicField" alignment="BOTTOM_CENTER" onKeyReleased="#updateFort" prefWidth="29.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="fortMiscField" alignment="BOTTOM_CENTER" onKeyReleased="#updateFort" prefWidth="29.0" text="0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="6.0" layoutY="336.0" minHeight="22.0" prefHeight="22.0" prefWidth="416.0" scaleX="1.0" scaleY="1.0" scaleZ="1.0" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="refbutt" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="54.0" text="Reflex" />
+            <Label fx:id="reftotallabel" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="saveMenuRef" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateRef" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="refabilitylabel" font="$x7" prefWidth="16.800048828125" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="refBaseField" alignment="BOTTOM_CENTER" onKeyReleased="#updateRef" prefWidth="29.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="refMagicField" alignment="BOTTOM_CENTER" onKeyReleased="#updateRef" prefWidth="29.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="refMiscField" alignment="BOTTOM_CENTER" onKeyReleased="#updateRef" prefWidth="29.0" text="0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="6.0" layoutY="358.0" minHeight="22.0" prefHeight="22.0" prefWidth="416.0" scaleX="1.0" scaleY="1.0" scaleZ="1.0" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="willbutt" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="54.0" text="Will" />
+            <Label fx:id="willtotallabel" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="saveMenuWill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateWill" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="willabilitylabel" font="$x7" prefWidth="16.800048828125" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="willBaseField" alignment="BOTTOM_CENTER" onKeyReleased="#updateWill" prefWidth="29.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="willMagicField" alignment="BOTTOM_CENTER" onKeyReleased="#updateWill" prefWidth="29.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="willMiscField" alignment="BOTTOM_CENTER" onKeyReleased="#updateWill" prefWidth="29.0" text="0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <Label layoutX="71.0" layoutY="297.0" prefWidth="357.0" text="      Total               Ability                 Base     Magic     Misc" />
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="827.0" layoutY="27.0" minHeight="694.0" prefHeight="892.0" prefWidth="392.0">
+      <children>
+        <AnchorPane layoutX="-1.0" layoutY="32.0" minHeight="24.0" prefHeight="24.0" prefWidth="392.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="BOTTOM_LEFT" font="$x6" layoutX="31.0" layoutY="-2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="81.0" text="Skill name" textFill="WHITE" />
+            <Label alignment="BOTTOM_LEFT" font="$x5" layoutX="121.0" layoutY="-3.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="240.0" text=" Total            Attribute             Ranks     Misc" textFill="WHITE" />
+            <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="360.0" layoutY="-2.0" prefHeight="16.0" text="Class" textFill="WHITE" />
+            <Label layoutX="362.0" layoutY="9.0" text="Skill?" textFill="WHITE" />
+          </children>
+        </AnchorPane>
+        <AnchorPane layoutX="-1.0" layoutY="8.0" minHeight="24.0" prefHeight="24.0" prefWidth="392.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" font="$x1" layoutX="142.0" layoutY="-3.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="81.0" text="SKILLS" textFill="WHITE" />
+            <Label fx:id="totalskillrankslabel" font="$x7" layoutX="291.0" layoutY="3.0" text="0" textFill="WHITE" />
+            <Label font="$x7" layoutX="317.0" layoutY="2.0" text="/" textFill="WHITE" />
+            <NumberField layoutX="326.0" layoutY="1.0" prefWidth="39.0" text="0" />
+          </children>
+        </AnchorPane>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="54.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt0" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Appraise" />
+            <Label fx:id="skilllabel0" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="appraiseSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel0" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField0" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField0" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox0" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="20.0499267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="72.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt1" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Balence" />
+            <Label fx:id="skilllabel1" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="balenceSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel1" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField1" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField1" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox1" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="90.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt2" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Bluff" />
+            <Label fx:id="skilllabel2" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="bluffSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel2" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField2" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField2" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox2" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="108.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt3" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Climb" />
+            <Label fx:id="skilllabel3" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="climbSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel3" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField3" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField3" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox3" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="126.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt4" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Concentration" />
+            <Label fx:id="skilllabel4" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="concentrationSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel4" font="$x7" prefWidth="57.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField4" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField4" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox4" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="144.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt5" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="27.5" text="Craft" />
+            <TextField fx:id="craftField1" prefWidth="96.0" style="" text="" />
+            <Label fx:id="skilllabel5" font="$x6" prefWidth="23.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="craft1Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel5" font="$x7" prefWidth="57.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField5" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField5" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox5" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="198.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt8" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Decipher Script" />
+            <Label fx:id="skilllabel8" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="decipherScriptSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel8" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField8" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField8" alignment="BOTTOM_CENTER" onInputMethodTextChanged="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox8" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="216.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt9" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Diplomacy" />
+            <Label fx:id="skilllabel9" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="diplomacySkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel9" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField9" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField9" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox9" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="234.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt10" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Disable Device" />
+            <Label fx:id="skilllabel10" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="disableDeviceSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel10" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField10" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField10" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox10" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="252.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt11" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Disguise" />
+            <Label fx:id="skilllabel11" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="disguiseSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel11" font="$x7" prefWidth="57.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField11" alignment="BOTTOM_CENTER" onInputMethodTextChanged="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField11" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox11" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="270.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt12" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Escape Artist" />
+            <Label fx:id="skilllabel12" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="escapeArtistSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel12" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField12" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField12" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox12" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="306.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt14" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Gather Information" />
+            <Label fx:id="skilllabel14" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="gatherInformationSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel14" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField14" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField14" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox14" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="162.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt6" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="27.5" text="Craft" />
+            <TextField fx:id="craftField2" prefWidth="95.3499755859375" style="" text="" />
+            <Label fx:id="skilllabel6" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="craft2Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel6" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField6" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField6" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox6" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="180.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt7" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="27.5" text="Craft" />
+            <TextField fx:id="craftField3" prefWidth="95.3499755859375" style="" text="" />
+            <Label fx:id="skilllabel7" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="craft3Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel7" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField7" alignment="BOTTOM_CENTER" onInputMethodTextChanged="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField7" alignment="BOTTOM_CENTER" onInputMethodTextChanged="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox7" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="324.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt15" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Handle Animal" />
+            <Label fx:id="skilllabel15" font="$x6" prefWidth="23.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="handleAnimalSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel15" font="$x7" prefWidth="57.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField15" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField15" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox15" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="342.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt16" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Heal" />
+            <Label fx:id="skilllabel16" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="healSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel16" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField16" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField16" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox16" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="360.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt17" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Hide" />
+            <Label fx:id="skilllabel17" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="hideSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel17" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField17" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField17" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox17" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="378.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt18" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Intimidate" />
+            <Label fx:id="skilllabel18" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="intimidateSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel18" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField18" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField18" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox18" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="396.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt19" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Jump" />
+            <Label fx:id="skilllabel19" font="$x6" prefWidth="23.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="jumpSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel19" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField19" alignment="BOTTOM_CENTER" onInputMethodTextChanged="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField19" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox19" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="414.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt20" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="63.79998779296875" text="Knowledge" />
+            <TextField fx:id="KnowledgeField1" prefWidth="101.5" style="" text="" />
+            <Label fx:id="skilllabel20" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="knowledge1Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel20" font="$x7" prefWidth="28.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField20" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField20" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="6.449951171875" text=" " />
+            <CheckBox fx:id="skillBox20" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="432.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt21" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="63.79998779296875" text="Knowledge" />
+            <TextField fx:id="KnowledgeField2" prefWidth="101.5" style="" text="" />
+            <Label fx:id="skilllabel21" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="knowledge2Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel21" font="$x7" prefWidth="27.99993896484375" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField21" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField21" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="6.449951171875" text=" " />
+            <CheckBox fx:id="skillBox21" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="450.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt22" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="63.79998779296875" text="Knowledge" />
+            <TextField fx:id="KnowledgeField3" prefWidth="101.5" style="" text="" />
+            <Label fx:id="skilllabel22" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="knowledge3Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel22" font="$x7" prefWidth="27.99993896484375" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField22" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField22" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="6.449951171875" text=" " />
+            <CheckBox fx:id="skillBox22" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="468.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt23" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="63.79998779296875" text="Knowledge" />
+            <TextField fx:id="KnowledgeField4" prefWidth="101.5" style="" text="" />
+            <Label fx:id="skilllabel23" font="$x6" prefWidth="23.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="knowledge4Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel23" font="$x7" prefWidth="27.99993896484375" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField23" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField23" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="6.449951171875" text=" " />
+            <CheckBox fx:id="skillBox23" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="486.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt24" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="63.79998779296875" text="Knowledge" />
+            <TextField fx:id="KnowledgeField5" prefWidth="101.5" style="" text="" />
+            <Label fx:id="skilllabel24" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="knowledge5Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel24" font="$x7" prefWidth="27.99993896484375" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField24" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField24" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="6.449951171875" text=" " />
+            <CheckBox fx:id="skillBox24" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="504.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt25" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Listen" />
+            <Label fx:id="skilllabel25" font="$x6" prefWidth="23.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="listenSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel25" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField25" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField25" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox25" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="522.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt26" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Move Silently" />
+            <Label fx:id="skilllabel26" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="moveSilentlySkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel26" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField26" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField26" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox26" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="540.0" minHeight="22.0" prefHeight="22.0" prefWidth="485.0" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt27" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Open Lock" />
+            <Label fx:id="skilllabel27" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="openLockSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel27" font="$x7" prefWidth="57.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField27" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField27" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox27" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="630.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt32" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Ride" />
+            <Label fx:id="skilllabel32" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="rideSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel32" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField32" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField32" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox32" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="648.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt33" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Search" />
+            <Label fx:id="skilllabel33" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="searchSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel33" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField33" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField33" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox33" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="666.0" minHeight="22.0" prefHeight="22.0" prefWidth="485.0" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt34" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Sense Motive" />
+            <Label fx:id="skilllabel34" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="senseMotiveSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel34" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField34" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField34" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox34" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="558.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt28" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="63.79998779296875" text="Perform" />
+            <TextField fx:id="PerformField1" prefWidth="101.5" style="" text="" />
+            <Label fx:id="skilllabel28" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="perform1Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel28" font="$x7" prefWidth="27.99993896484375" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField28" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField28" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="6.449951171875" text=" " />
+            <CheckBox fx:id="skillBox28" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="576.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt29" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="63.79998779296875" text="Perform" />
+            <TextField fx:id="PerformField2" prefWidth="101.5" style="" text="" />
+            <Label fx:id="skilllabel29" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="perform2Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel29" font="$x7" prefWidth="27.99993896484375" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField29" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField29" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="6.449951171875" text=" " />
+            <CheckBox fx:id="skillBox29" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="594.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt30" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="63.79998779296875" text="Perform" />
+            <TextField fx:id="PerformField3" prefWidth="101.5" style="" text="" />
+            <Label fx:id="skilllabel30" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="perform3Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel30" font="$x7" prefWidth="27.99993896484375" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField30" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField30" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="6.449951171875" text=" " />
+            <CheckBox fx:id="skillBox30" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="612.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt31" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="63.79998779296875" text="Profession" />
+            <TextField fx:id="ProfessionField1" prefWidth="101.5" style="" text="" />
+            <Label fx:id="skilllabel31" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="professionSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel31" font="$x7" prefWidth="27.99993896484375" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField31" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField31" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="6.449951171875" text=" " />
+            <CheckBox fx:id="skillBox31" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="684.0" minHeight="22.0" prefHeight="22.0" prefWidth="485.0" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt35" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Sleight of Hand" />
+            <Label fx:id="skilllabel35" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="sleightOfHandSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel35" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField35" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField35" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox35" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="702.0" minHeight="22.0" prefHeight="22.0" prefWidth="485.0" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt36" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Spellcraft" />
+            <Label fx:id="skilllabel36" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="spellcraftSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel36" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField36" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField36" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox36" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="720.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt37" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Spot" />
+            <Label fx:id="skilllabel37" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="spotSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel37" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField37" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField37" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox37" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="738.0" minHeight="22.0" prefHeight="22.0" prefWidth="485.0" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt38" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Survival" />
+            <Label fx:id="skilllabel38" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="survivalSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel38" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField38" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField38" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox38" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="756.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt39" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Swim" />
+            <Label fx:id="skilllabel39" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="swimSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel39" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField39" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField39" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox39" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="774.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt40" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Tumble" />
+            <Label fx:id="skilllabel40" font="$x6" prefWidth="23.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="tumbleSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel40" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField40" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField40" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox40" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="828.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt43" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <TextField fx:id="exField1" prefWidth="124.5999755859375" style="" text="" />
+            <Label fx:id="skilllabel43" font="$x6" prefWidth="23.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="ex1Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel43" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField43" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField43" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox43" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="846.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt44" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <TextField fx:id="exField2" prefWidth="124.5999755859375" style="" text="" />
+            <Label fx:id="skilllabel44" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="ex2Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel44" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField44" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField44" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox44" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="864.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt45" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <TextField fx:id="exField3" prefWidth="124.5999755859375" style="" text="" />
+            <Label fx:id="skilllabel45" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="ex3Skill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel45" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField45" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField45" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox45" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="288.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt13" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Forgery" />
+            <Label fx:id="skilllabel13" font="$x6" prefWidth="22.5" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="forgerySkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel13" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField13" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField13" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox13" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="792.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:whitesmoke;">
+          <children>
+            <Button fx:id="skillButt41" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Use Magic Device" />
+            <Label fx:id="skilllabel41" font="$x6" prefWidth="23.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="useMagicDeviceSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel41" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField41" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField41" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox41" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="-46.0" layoutY="810.0" minHeight="22.0" prefHeight="22.0" prefWidth="484.19999999999993" scaleX="0.8" scaleY="0.8" scaleZ="0.8" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Button fx:id="skillButt42" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+            <Label alignment="CENTER_LEFT" font="$x5" prefHeight="22.0" prefWidth="124.199951171875" text="Use Rope" />
+            <Label fx:id="skilllabel42" font="$x6" prefWidth="23.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="useRopeSkill" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateSkills" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="skillranklabel42" font="$x7" prefWidth="56.300048828125" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <NumberField fx:id="SkillRankField42" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="SkillMiscField42" alignment="BOTTOM_CENTER" onKeyReleased="#updateSkills" prefWidth="29.0" text="" />
+            <Label prefWidth="20.0999755859375" text=" " />
+            <CheckBox fx:id="skillBox42" alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#updateSkills" prefWidth="21.2999267578125" text="" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="404.0" layoutY="78.0" prefHeight="146.39999389648438" prefWidth="425.0" style="">
+      <children>
+        <AnchorPane layoutX="2.0" layoutY="32.0" minHeight="49.0" prefHeight="49.0" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" font="$x1" layoutX="13.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="39.0" text="HP" textFill="WHITE" />
+            <Label alignment="TOP_CENTER" layoutX="10.0" layoutY="27.0" text="Hit Points" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </AnchorPane>
+        <HBox alignment="CENTER_LEFT" layoutX="68.0" layoutY="40.0" prefHeight="32.0" prefWidth="357.0000999999975" spacing="15.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <NumberField alignment="CENTER" prefHeight="25.0" prefWidth="64.0" promptText="" text="0" />
+            <NumberField alignment="CENTER" prefHeight="25.0" prefWidth="64.0" text="0" />
+            <NumberField alignment="CENTER" prefHeight="25.0" prefWidth="64.0" text="0" />
+            <NumberField alignment="CENTER" prefHeight="25.0" prefWidth="64.0" text="0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <HBox alignment="BOTTOM_LEFT" layoutX="67.0" layoutY="17.0" prefHeight="21.0" prefWidth="318.0" spacing="0.0" style="-fx-background-color:white;">
+          <children>
+            <Label alignment="CENTER" prefWidth="80.0" text="Total HP" />
+            <Label alignment="CENTER" contentDisplay="LEFT" prefWidth="81.0" text="Current" />
+            <Label alignment="CENTER" prefWidth="72.0" text="Nonlethal" />
+            <Label alignment="CENTER" prefWidth="82.0" text="Temporary" />
+          </children>
+        </HBox>
+        <AnchorPane layoutX="2.0" layoutY="86.0" minHeight="49.0" prefHeight="49.0" prefWidth="66.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" font="$x1" layoutX="5.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="58.0" text="BAB" textFill="WHITE" />
+            <Label alignment="TOP_CENTER" layoutX="3.0" layoutY="21.0" text="Base Attack" textFill="WHITE" textOverrun="ELLIPSIS" />
+            <Label alignment="TOP_CENTER" layoutX="17.0" layoutY="31.0" text="Bonus" textFill="WHITE" textOverrun="ELLIPSIS" />
+          </children>
+        </AnchorPane>
+        <HBox alignment="CENTER_LEFT" layoutX="68.0" layoutY="95.0" prefHeight="32.0" prefWidth="82.0" spacing="15.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <NumberField fx:id="babField" alignment="CENTER" onKeyReleased="#updateBab" prefHeight="25.0" prefWidth="64.0" promptText="" text="0" />
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="13.0" layoutY="479.0" prefHeight="407.4000244140625" prefWidth="389.0">
+      <children>
+        <AnchorPane layoutX="14.0" layoutY="14.0" minHeight="32.0" prefHeight="32.0" prefWidth="371.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+          <children>
+            <Label alignment="TOP_CENTER" font="$x1" layoutX="145.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="82.0" text="Weapon" textFill="WHITE" />
+            <ComboBox fx:id="weaponMenu" layoutX="239.0" layoutY="5.0" onAction="#weaponswitch" prefHeight="21.0" prefWidth="118.0">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Button fx:id="weaponbutt" layoutX="12.0" layoutY="5.0" minHeight="15.999908447265625" minWidth="16.0" mnemonicParsing="false" onAction="#diceRoll" prefHeight="22.0" prefWidth="22.0" text="">
+              <graphic>
+                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@D20.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+          </children>
+        </AnchorPane>
+        <TextField fx:id="weaponNameField" alignment="CENTER" layoutX="26.0" layoutY="46.0" prefWidth="350.0" text="Enter Name Here" />
+        <HBox alignment="CENTER" layoutX="25.0" layoutY="68.0" prefHeight="22.0" prefWidth="350.0" style="-fx-background-color:black;">
+          <children>
+            <Label text="Total Attack Bonus" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="12.0" fx:id="x9" />
+              </font>
+            </Label>
+          </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="11.0" layoutY="106.0" minHeight="22.0" prefHeight="22.0" prefWidth="371.0" scaleX="1.0" scaleY="1.0" scaleZ="1.0" spacing="2.0" style="-fx-background-color:lightgrey;">
+          <children>
+            <Label fx:id="weapontotallabel" alignment="CENTER" contentDisplay="CENTER" font="$x8" prefHeight="25.0" prefWidth="33.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="17.000099999997474" text="=" />
+            <ComboBox id="label" fx:id="weaponAttribute" disable="false" editable="false" focusTraversable="true" maxWidth="106.0" minHeight="16.999900000002526" minWidth="58.0" onAction="#updateWeapon" prefHeight="21.0" prefWidth="72.0" promptText="" visible="true">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Item 1" />
+                  <String fx:value="Item 2" />
+                  <String fx:value="Item 3" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Label fx:id="weaponattributelabel" font="$x7" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="22.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="16.0" text="+" />
+            <Label fx:id="weaponbablabel" font="$x7" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="19.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="weaponWeaponField" alignment="BOTTOM_CENTER" onKeyReleased="#updateWeapon" prefHeight="25.0" prefWidth="29.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="weaponFeatField" alignment="BOTTOM_CENTER" onKeyReleased="#updateWeapon" prefHeight="25.0" prefWidth="29.0" text="0" />
+            <Label contentDisplay="CENTER" font="$x3" prefWidth="13.0" text="+" />
+            <NumberField fx:id="weaponOtherField" alignment="BOTTOM_CENTER" onKeyReleased="#updateWeapon" prefHeight="25.0" prefWidth="29.0" text="0" />
+                  <Label text="+">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="weaponsizelabel" prefHeight="17.0" prefWidth="18.0" text="0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+          </children>
+          <padding>
+            <Insets left="10.0" />
+          </padding>
+        </HBox>
+        <Label layoutX="41.0" layoutY="90.0" prefWidth="350.0" text="Total          Attribute         BAB     Weapon   Feats    Other    Size" />
+        <HBox alignment="CENTER" layoutX="25.0" layoutY="128.0" prefHeight="22.0" prefWidth="350.0" style="-fx-background-color:black;">
+          <children>
+            <Label font="$x9" text="Damage" textFill="WHITE" />
+          </children>
+        </HBox>
+        <TextField fx:id="weaponDamageField" alignment="CENTER" layoutX="24.0" layoutY="150.0" prefWidth="350.0" text="" />
+        <HBox alignment="CENTER" layoutX="24.0" layoutY="172.0" prefHeight="22.0" prefWidth="100.0" style="-fx-background-color:black;">
+          <children>
+            <Label font="$x9" text="Critical" textFill="WHITE" />
+          </children>
+        </HBox>
+        <Label layoutX="80.0" layoutY="194.0" prefHeight="22.0" prefWidth="32.0" text="-20" />
+        <NumberField fx:id="weaponCritField" alignment="CENTER_RIGHT" layoutX="26.0" layoutY="194.0" onKeyReleased="#updateWeapon" prefWidth="52.0" text="20" />
+        <HBox alignment="CENTER" layoutX="132.0" layoutY="172.0" prefHeight="22.0" prefWidth="131.0" style="-fx-background-color:black;">
+          <children>
+            <Label font="$x9" text="Range" textFill="WHITE" />
+          </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="274.0" layoutY="171.0" prefHeight="22.0" prefWidth="100.0" style="-fx-background-color:black;">
+          <children>
+            <Label font="$x9" text="Type" textFill="WHITE" />
+          </children>
+        </HBox>
+        <TextField fx:id="weaponRangeField" alignment="CENTER" layoutX="132.0" layoutY="194.0" prefWidth="131.0" text="" />
+        <TextField fx:id="weaponTypeField" alignment="CENTER" layoutX="274.0" layoutY="193.0" prefWidth="100.0" text="" />
+        <HBox alignment="CENTER" layoutX="25.0" layoutY="214.0" prefHeight="22.0" prefWidth="350.0" style="-fx-background-color:black;">
+          <children>
+            <Label alignment="CENTER" font="$x9" prefWidth="89.0" text="Other Notes" textFill="WHITE" />
+          </children>
+        </HBox>
+        <TextArea fx:id="weaponOtherNotesField" layoutX="24.0" layoutY="236.0" prefWidth="350.0" wrapText="true" />
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutX="412.0" layoutY="600.0" minHeight="32.0" prefHeight="32.0" prefWidth="416.0" style="-fx-background-color:black;&#10;-fx-background-radius: 15;&#10;">
+      <children>
+        <Label alignment="TOP_CENTER" font="$x1" layoutX="167.0" layoutY="2.0" minHeight="21.999900000002526" prefHeight="25.0" prefWidth="82.0" text="Rolls" textFill="WHITE" />
+      </children>
+    </AnchorPane>
+    <VBox layoutX="423.0" layoutY="632.0" prefHeight="245.0" prefWidth="392.0" style="-fx-background-color:whitesmoke;">
+      <children>
+        <Label fx:id="diceroll0" alignment="CENTER" font="$x6" prefHeight="25.0" prefWidth="388.0" text="." />
+        <Label fx:id="diceroll1" alignment="CENTER" font="$x6" prefHeight="25.0" prefWidth="388.0" text="." />
+        <Label fx:id="diceroll2" alignment="CENTER" font="$x6" prefHeight="25.0" prefWidth="388.0" text="." />
+        <Label fx:id="diceroll3" alignment="CENTER" font="$x6" prefHeight="25.0" prefWidth="388.0" text="." />
+        <Label fx:id="diceroll4" alignment="CENTER" font="$x6" prefHeight="25.0" prefWidth="388.0" text="." />
+        <Label fx:id="diceroll5" alignment="CENTER" font="$x6" prefHeight="25.0" prefWidth="388.0" text="." />
+        <Label fx:id="diceroll6" alignment="CENTER" font="$x6" prefHeight="25.0" prefWidth="388.0" text="." />
+        <Label fx:id="diceroll7" alignment="CENTER" font="$x6" prefHeight="25.0" prefWidth="388.0" text="." />
+        <Label fx:id="diceroll8" alignment="CENTER" font="$x6" prefHeight="25.0" prefWidth="388.0" text="." />
+        <Label fx:id="diceroll9" alignment="CENTER" font="$x6" prefHeight="25.0" prefWidth="388.0" text="." />
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
